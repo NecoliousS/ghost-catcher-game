@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Catcher: Wall Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1 class="game-title">Ghost Catcher</h1>
+        <p class="subtitle">Wall Edition — No Diagonal Movement</p>
+
+        <div class="menu-container" id="menu">
+            <button class="difficulty-btn btn-easy" id="btnEasy">Easy</button>
+            <button class="difficulty-btn btn-medium" id="btnMedium">Medium</button>
+            <button class="difficulty-btn btn-hard" id="btnHard">Hard</button>
+        </div>
+
+        <div class="game-area" id="gameArea">
+            <div class="level-info">
+                <span class="level-badge" id="levelBadge">Easy</span>
+                <span class="moves-counter">Moves: <span id="movesCount">0</span></span>
+            </div>
+
+            <div class="game-message" id="gameMessage"></div>
+
+            <div class="grid-container" id="grid"></div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-box player-box"></div>
+                    <span>You</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box ghost-box"></div>
+                    <span>Ghost</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box exit-box"></div>
+                    <span>Exit</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box wall-box"></div>
+                    <span>Wall</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="empty"></div>
+                <button class="arrow-btn" id="btnUp">&#9650;</button>
+                <div class="empty"></div>
+                <button class="arrow-btn" id="btnLeft">&#9664;</button>
+                <button class="arrow-btn" id="btnDown">&#9660;</button>
+                <button class="arrow-btn" id="btnRight">&#9654;</button>
+            </div>
+
+            <div>
+                <button class="restart-btn" id="btnRestart">Restart Level</button>
+                <button class="back-btn" id="btnBack">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
